@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams, useParams } from 'react-router-dom';
 import { io } from 'socket.io-client'
 import "./Room.css"
 
-const socket = io("http://localhost:8000/");
+const socket = io("https://video-conferencing-vsoe.onrender.com/");
 const Room = () => {
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([]);

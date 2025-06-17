@@ -4,7 +4,7 @@ import { v4 as uudidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
 import "./CreateRoom.css";
 
-const socket = io("http://localhost:8000/");
+const socket = io("https://video-conferencing-vsoe.onrender.com/");
 const CreateRoom = () => {
     const [roomId, setRoomId] = useState("");
     const [joined, setJoined] = useState(false);
